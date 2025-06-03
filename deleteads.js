@@ -8,7 +8,9 @@ const targetStrings = [
     "ad_pr_ranking",
     "bnc_ad_",
     "ad_jack_right",
-    "ad_jack_left", "ob-smartfeed"];
+    "ad_jack_left",
+    "ob-smartfeed",
+    "mf-col-custom-ad"];
 
 // onloadとその後５秒後に広告削除実行
 window.onload = function () {
@@ -45,15 +47,16 @@ function deleteAdd() {
         });
     });
 
+    //さすがにやりすぎたので一時コメントアウト
     // すべてのiframe要素を取得して削除＋赤文字
-    var iframes = document.getElementsByTagName("iframe");
-    const iframeArray = Array.prototype.slice.call(iframes);
-    iframeArray.forEach(function (element) {
-        var deletedMsg = document.createElement("span");
-        deletedMsg.style.color = "blue";
-        deletedMsg.textContent = "iFrames ";
-        element.parentNode.insertBefore(deletedMsg, element);
-        element.remove();
-        console.log("deleted iframes");
-    });
+    // var iframes = document.getElementsByTagName("iframe");
+    // const iframeArray = Array.prototype.slice.call(iframes);
+    // iframeArray.forEach(function (element) {
+    //     var deletedMsg = document.createElement("span");
+    //     deletedMsg.style.color = "blue";
+    //     deletedMsg.textContent = "iFrames ";
+    //     element.parentNode.insertBefore(deletedMsg, element);
+    //     element.remove();
+    //     console.log("deleted iframes");
+    // });
 }
