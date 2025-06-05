@@ -1,19 +1,20 @@
 {
-  "name": "iFrame Deletion",
-  "description": "特定のClass/IDの要素とiframeタグを削除する拡張機能",
+  "name": "MfmeToSheets",
+  "description": "MFMEの収支をGoogle Sheetsに転記する",
   "version": "1.0",
   "manifest_version": 3,
   "content_scripts": [
     {
       "matches": [
-        "<all_urls>"
+        "https://moneyforward.com/cf"
       ],
       "js": [
-        "deleteads.js"
+        "mfmetosheets.js"
       ]
     }
   ],
   "action": {
+    "default_popup": "popup.html",
     "default_icon": {
       "16": "images/icon16.png",
       "24": "images/icon24.png",
