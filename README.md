@@ -1,2 +1,2 @@
-# mfmetosheets
-sheetへマネフォワードMEの収支を送信
+# RemoveUnwantedAds
+広告のHTML要素を削除するChrome拡張機能です
