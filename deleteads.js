@@ -10,7 +10,10 @@ const targetStrings = [
     "ad_jack_right",
     "ad_jack_left",
     "ob-smartfeed",
-    "mf-col-custom-ad"];
+    "mf-col-custom-ad",
+    "ats-glia-wrapper",
+    "ats-overlay-bottom-wrapper-rendered"
+];
 
 // onloadとその後５秒後に広告削除実行
 window.onload = function () {
