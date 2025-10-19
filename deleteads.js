@@ -12,7 +12,10 @@ const targetStrings = [
     "ob-smartfeed",
     "mf-col-custom-ad",
     "ats-glia-wrapper",
-    "ats-overlay-bottom-wrapper-rendered"
+    "ats-overlay-bottom-wrapper-rendered",
+    "pfx_interstitial",
+    "mainArticle",
+    "overlay_ad_pc"
 ];
 
 // onloadとその後５秒後に広告削除実行
