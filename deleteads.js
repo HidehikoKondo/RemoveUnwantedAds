@@ -14,8 +14,10 @@ const targetStrings = [
     "ats-glia-wrapper",
     "ats-overlay-bottom-wrapper-rendered",
     "pfx_interstitial",
-    "mainArticle",
-    "overlay_ad_pc"
+    // "mainArticle",
+    "overlay_ad_pc",
+    "trv-player-container",
+    ad_under_table_of_contents
 ];
 
 // onloadとその後５秒後に広告削除実行
@@ -26,6 +28,17 @@ window.onload = function () {
         console.log("5 seconds after onload deleteAdd");
         deleteAdd();
     }, 5000);
+
+
+    // onload 以降、10秒ごとに広告削除を実行
+    // 途中で止めたい場合は window.deleteAdsIntervalId を clearInterval してください
+    const intervalId = setInterval(function () {
+        console.log("interval deleteAdd");
+        deleteAdd();
+    }, 10000);
+    // 外部から停止できるように参照を保存
+    window.deleteAdsIntervalId = intervalId;
+
 };
 
 // スクロール後にdeleteAddを実行（100ms後に1回だけ）
