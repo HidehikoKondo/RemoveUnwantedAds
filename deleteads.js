@@ -14,10 +14,9 @@ const targetStrings = [
     "ats-glia-wrapper",
     "ats-overlay-bottom-wrapper-rendered",
     "pfx_interstitial",
-    // "mainArticle",
     "overlay_ad_pc",
     "trv-player-container",
-    ad_under_table_of_contents
+    "ad_under_table_of_contents"
 ];
 
 // onloadとその後５秒後に広告削除実行
