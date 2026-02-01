@@ -1,6 +1,6 @@
 {
-  "name": "iFrame Deletion",
-  "description": "特定のClass/IDの要素とiframeタグを削除する拡張機能",
+  "name": "Ad Blocker - Class/ID（Webサイトの広告をClass/IDで削除）",
+  "description": "Removes website ads by targeting and removing their HTML elements specified by class or ID. 広告Webサイトの広告のHTML要素のClassかIDを指定して削除します。",
   "version": "1.0",
   "manifest_version": 3,
   "content_scripts": [
