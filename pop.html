@@ -8,7 +8,7 @@
     </title>
     <style>
         body {
-            width: 250px;
+            width: 350px;
             background-color: white;
             color: #555;
         }
@@ -19,6 +19,7 @@
 
         .textbox {
             height: 20px;
+            width: 300px;
             /* border-style: none; */
         }
 
@@ -61,8 +62,8 @@
     </h1>
     <h2>Class or ID to block</h2>
     <div id="blockurl">
-        <input class="textbox" id="rejectURL" type="textbox" placeholder="https://example.com"><button
-            id="addbutton">+</button>
+        <input class="textbox" id="rejectURL" type="textbox"
+            placeholder="Class or ID of the ad HTML element to block"><button id="addbutton">+</button>
     </div>
     <h2>Blocked Classes or IDs</h2>
 
@@ -70,9 +71,15 @@
         <input class="urls textbox" id="1" disabled><button class="del">×</button>
     </div>
 
+    <h2>Export / Import</h2>
+
     <button id="downloadBtn"
-        style="margin-top: 10px; margin-left: 5%; padding: 6px 12px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer; width: auto;">Download
-        as TXT</button>
+        style="margin: 0 12px 0 0; padding: 15px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer; width: auto; display: inline-flex; align-items: center; justify-content: center; text-align: center;">Export</button>
+
+    <button id="importBtn"
+        style="margin: 0; padding: 15px; background-color: #2196F3; color: white; border: none; border-radius: 4px; cursor: pointer; width: auto; display: inline-flex; align-items: center; justify-content: center; text-align: center;">Import</button>
+
+    <input type="file" id="importFile" accept=".txt" style="display: none;">
 
     <hr>
     <h2>
