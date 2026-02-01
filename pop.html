@@ -13,6 +13,10 @@
             color: #555;
         }
 
+        h1 {
+            text-decoration: underline;
+        }
+
         div {
             width: 100%;
         }
@@ -54,15 +58,46 @@
         .url-container {
             margin-bottom: 5px;
         }
+
+        /* Export / Import large button styles */
+        #downloadBtn,
+        #importBtn {
+            margin: 0;
+            padding: 10px;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: auto;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: auto;
+        }
+
+        #downloadBtn {
+            background-color: #4CAF50;
+            margin-right: 12px;
+        }
+
+        #importBtn {
+            background-color: #2196F3;
+        }
+
+        /* hidden file input */
+        #importFile {
+            display: none;
+        }
     </style>
 
 <body>
     <h1>
-        Remove Ads
+        Your AdBlocker Settings
     </h1>
-    <h2>Class or ID to block</h2>
+    <h2>HTML element Class or ID to block</h2>
     <div id="blockurl">
-        <input class="textbox" id="rejectURL" type="textbox" placeholder="Example : google_ads_iframe"><button
+        <input class="textbox" id="rejectURL" type="textbox" placeholder="Example : ydn-ad"><button
             id="addbutton">+</button>
     </div>
     <p>Enter the class name or ID (partial
@@ -75,13 +110,11 @@
 
     <h2>Export / Import</h2>
 
-    <button id="downloadBtn"
-        style="margin: 0 12px 0 0; padding: 15px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer; width: auto; display: inline-flex; align-items: center; justify-content: center; text-align: center;">Export</button>
+    <button id="downloadBtn">Export</button>
 
-    <button id="importBtn"
-        style="margin: 0; padding: 15px; background-color: #2196F3; color: white; border: none; border-radius: 4px; cursor: pointer; width: auto; display: inline-flex; align-items: center; justify-content: center; text-align: center;">Import</button>
+    <button id="importBtn">Import</button>
 
-    <input type="file" id="importFile" accept=".txt" style="display: none;">
+    <input type="file" id="importFile" accept=".txt">
 
     <p>Use Export to back up your list and Import to restore from a saved file.</p>
 
