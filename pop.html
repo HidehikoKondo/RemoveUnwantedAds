@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="./blockeddata.js"></script>
+    <title>
+        popupf
+    </title>
+    <style>
+        body {
+            width: 250px;
+            background-color: white;
+            color: #555;
+        }
+
+        div {
+            width: 100%;
+        }
+
+        .textbox {
+            height: 20px;
+            /* border-style: none; */
+        }
+
+        button {
+            margin-left: 5%;
+            border-style: none;
+            border-radius: 4px;
+            width: 20px;
+            height: 20px;
+        }
+
+        #addbutton {
+            background-color: mediumaquamarine;
+            color: white;
+        }
+
+        #addbutton:hover {
+            background-color: green;
+            color: white;
+        }
+
+        .del {
+            background-color: tomato;
+            color: white;
+        }
+
+        .del:hover {
+            background-color: red;
+            color: white;
+        }
+
+        .url-container {
+            margin-bottom: 5px;
+        }
+    </style>
+
+<body>
+    <h1>
+        Remove Ads
+    </h1>
+    <h2>Class or ID to block</h2>
+    <div id="blockurl">
+        <input class="textbox" id="rejectURL" type="textbox" placeholder="https://example.com"><button
+            id="addbutton">+</button>
+    </div>
+    <h2>Blocked Classes or IDs</h2>
+
+    <div id="blockedurls">
+        <input class="urls textbox" id="1" disabled><button class="del">×</button>
+    </div>
+    <hr>
+    <h2>
+        <a href="https://www.paypal.com/paypalme/udonkonet/5usd" target="_blank">PayPal me</a>
+    </h2>
+    <p>Thanks to your using our apps. I would be happy if you could donate.</p>
+
+</body>
+</head>
